@@ -17,6 +17,7 @@
         }
         body {
             background: hsl(204, 43%, 93%);
+            padding: 40px 0;
         }
         .pricing-container {
             display: grid;
@@ -25,11 +26,29 @@
             margin: 0 auto;
         }
         .join-us {
+            padding: 30px 25px;
             background: hsl(100, 100%, 100%);
+            border-radius: 6px;
+        }
+        .join-first-title {
+            font-size: 20px;
+            color: hsl(179, 61%, 44%);
+            margin-bottom: 20px;
+        }
+        .join-second-title {
+            font-size: 16px;
+            color: hsl(71, 73%, 54%);
+            margin-bottom: 20px;
+        }
+        .join-description {
+            font-size: 15px;
+            font-weight: 400;
+            color: hsl(218, 22%, 67%);
+            line-height: 25px;
         }
         .suscription {
             color: hsl(100, 100%, 100%);
-            background: hsl(179, 62%, 43%);
+            background: hsl(179, 61%, 44%);
         }
         .why-us {
             color: hsl(204, 43%, 93%);
@@ -40,9 +59,9 @@
 <body>
     <section class="pricing-container">
         <div class="join-us">
-            <h1>Join our community</h1>
-            <h2>30-day, hassle-free money back guarantee</h2>
-            <p>
+            <h1 class="join-first-title">Join our community</h1>
+            <h2 class="join-second-title">30-day, hassle-free money back guarantee</h2>
+            <p class="join-description">
                 Gain access to our full library of tutorials along with expert code reviews. 
                 Perfect for any developers who are serious about honing their skills.
             </p>
