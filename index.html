@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     <title>Single price grid | Challenge</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Karla', sans-serif;        
+        }
+        body {
+            background: hsl(204, 43%, 93%);
+        }
+        .pricing-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: max(50%, 320px);
+            margin: 0 auto;
+        }
+        .join-us {
+            background: hsl(100, 100%, 100%);
+        }
+        .suscription {
+            color: hsl(100, 100%, 100%);
+            background: hsl(179, 62%, 43%);
+        }
+        .why-us {
+            color: hsl(204, 43%, 93%);
+            background: hsl(179, 47%, 52%);
+        }
+    </style>
 </head>
 <body>
-    <section class="grid-container">
-        <div class="Join-us">
+    <section class="pricing-container">
+        <div class="join-us">
             <h1>Join our community</h1>
             <h2>30-day, hassle-free money back guarantee</h2>
             <p>
@@ -16,7 +47,7 @@
                 Perfect for any developers who are serious about honing their skills.
             </p>
         </div>
-        <div class="Suscription">
+        <div class="suscription">
             <h2>Monthly Subscription</h2>
             <p>&dollar;29 per month</p>
             <p>Full access for less than &dollar;1 a day</p>
