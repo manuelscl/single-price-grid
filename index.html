@@ -5,162 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
     <title>Single price grid | Challenge</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Karla', sans-serif;        
-        }
-        body {
-            background: hsl(204, 43%, 93%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 0;
-        }
-        .title-h2 {
-            font-size: 18px;
-            color: hsl(100, 100%, 100%);
-            margin-bottom: 20px;
-        }
-        .pricing-container {
-            display: grid;
-            grid-template-columns: minmax(50%, 320px);
-            margin: 0 auto;
-        }
-        .join-us {
-            padding: 30px 25px;
-            background: hsl(100, 100%, 100%);
-            border-radius: 8px 8px 0 0;
-        }
-        .join-first-title {
-            font-size: 22px;
-            color: hsl(179, 61%, 44%);
-            margin-bottom: 15px;
-        }
-        .join-second-title {
-            font-size: 16px;
-            color: hsl(71, 73%, 54%);
-            margin-bottom: 15px;
-        }
-        .join-description {
-            font-size: 15px;
-            font-weight: 400;
-            color: hsl(218, 22%, 67%);
-            line-height: 25px;
-        }
-        .suscription {
-            color: hsl(100, 100%, 100%);
-            background: hsl(179, 61%, 44%);
-            padding: 30px 25px;
-        }
-        .suscription-price {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 15px;
-            font-weight: 400;
-            color: hsl(179, 40%, 79%);
-            margin-bottom: 10px;
-        }
-        .price {
-            font-size: 30px;
-            font-weight: 700;
-            color: hsl(100, 100%, 100%);
-        }
-        .suscription-d {
-            font-size: 15px;
-        }
-        .suscription-btn {
-            display: block;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            text-align: center;
-            color: white;
-            background: hsl(71, 73%, 54%);
-            border: none;
-            border-radius: 6px;
-            padding: 16px 0;
-            margin-top: 46px;
-            box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.11);
-            text-decoration: none;
-            transition: 0.3s ease;
-            cursor: pointer;
-        }
-        .suscription-btn:hover {
-            box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.21);
-        }
-        .why-us {
-            color: hsl(204, 43%, 93%);
-            background: hsl(179, 47%, 52%);
-            padding: 30px 25px;
-            border-radius: 0 0 6px 6px;
-        }
-        .items {
-            font-size: 15px;
-            list-style: none;
-            margin-bottom: 5px;
-            color: hsl(179, 40%, 79%);
-        }
-        footer {
-            /* display: none; */
-            font-size: 16px;
-            margin: 40px 0 0 0;
-            text-align: center;
-        }
-        footer a {
-            font-weight: 700;
-            color: rgb(95, 95, 255);
-        }
-        footer a:active {
-            color: hsl(4, 100%, 69%);
-
-        }
-        @media (min-width: 980px) {
-            body {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-                padding: 0;
-            }
-            .pricing-container {
-                width: 625px;
-                grid-template-columns: 1fr 1fr;
-            }
-            .join-us {
-                grid-column: span 2;
-                padding: 40px 40px;
-            }
-            .suscription {
-                padding: 25px 40px;
-                border-radius: 0 0 0 8px;
-            }
-            .why-us {
-                padding: 25px 40px;
-                border-radius: 0 0 8px 0;
-            }
-            footer {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translate(-50%, 0);
-            }
-        }
-    </style>
 </head>
 <body>
     <main>
         <section class="pricing-container">
             <div class="join-us">
                 <h1 class="join-first-title">Join our community</h1>
-                <h2 class="join-second-title">30-day, hassle-free money back guarantee</h2>
+                <p class="join-subtitle">30-day, hassle-free money back guarantee</p>
                 <p class="join-description">
                     Gain access to our full library of tutorials along with expert code reviews. 
                     Perfect for any developers who are serious about honing their skills.
