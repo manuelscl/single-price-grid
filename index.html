@@ -32,7 +32,7 @@
         .join-us {
             padding: 30px 25px;
             background: hsl(100, 100%, 100%);
-            border-radius: 6px;
+            border-radius: 6px 6px 0 0;
         }
         .join-first-title {
             font-size: 20px;
@@ -59,7 +59,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
             color: hsl(179, 40%, 79%);
             margin-bottom: 10px;
@@ -70,7 +70,7 @@
             color: hsl(100, 100%, 100%);
         }
         .suscription-d {
-            font-size: 16px;
+            font-size: 15px;
         }
         .suscription-btn {
             width: 100%;
@@ -81,6 +81,10 @@
             margin-top: 40px;
             cursor: pointer;
             box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.11);
+            transition: 0.3s ease;
+        }
+        .suscription-btn:hover {
+            box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.21);
         }
         .suscription-btn a {
             font-size: 16px;
@@ -92,11 +96,36 @@
             color: hsl(204, 43%, 93%);
             background: hsl(179, 47%, 52%);
             padding: 30px 25px;
+            border-radius: 0 0 6px 6px;
         }
         .items {
+            font-size: 15px;
             list-style: none;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             color: hsl(179, 40%, 79%);
+        }
+        @media (min-width: 980px) {
+            body {
+                display: flex;
+                align-items: center;
+                height: 100vh;
+            }
+            .pricing-container {
+                width: 625px;
+                grid-template-columns: 1fr 1fr;
+            }
+            .join-us {
+                grid-column: span 2;
+                padding: 40px 40px;
+            }
+            .suscription {
+                padding: 30px 40px;
+                border-radius: 0 0 0 6px;
+            }
+            .why-us {
+                padding: 30px 40px;
+                border-radius: 0 0 6px 0;
+            }
         }
     </style>
 </head>
