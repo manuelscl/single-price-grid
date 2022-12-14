@@ -104,11 +104,26 @@
             margin-bottom: 4px;
             color: hsl(179, 40%, 79%);
         }
+        footer {
+            /* display: none; */
+            font-size: 16px;
+            margin: 40px 0 0 0;
+            text-align: center;
+        }
+        footer a {
+            font-weight: 700;
+            color: rgb(95, 95, 255);
+        }
+        footer a:active {
+            color: hsl(4, 100%, 69%);
+
+        }
         @media (min-width: 980px) {
             body {
                 display: flex;
                 align-items: center;
                 height: 100vh;
+                padding: 0;
             }
             .pricing-container {
                 width: 625px;
@@ -125,6 +140,12 @@
             .why-us {
                 padding: 30px 40px;
                 border-radius: 0 0 6px 0;
+            }
+            footer {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%, 0);
             }
         }
     </style>
@@ -161,11 +182,11 @@
         </div>
     </section>
   
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/profile/manuelscl" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Manuelscl</a>.
-    </p>
-  </footer> -->
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/profile/manuelscl" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/manuelscl/single-price-grid.com">Manuelscl</a>.
+        </p>
+    </footer>
 </body>
 </html>

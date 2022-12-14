@@ -19,7 +19,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/manuelscl/single-price-grid.com)
+- Solution URL: [Add solution URL here](https://github.com/manuelscl/single-price-grid)
 - Live Site URL: [Add live site URL here](https://manuelscl.github.io/single-price-grid)
 
 ## My process
