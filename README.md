@@ -14,7 +14,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop
+![](./images/single-price-desktop.png)
 
 
 ### Links

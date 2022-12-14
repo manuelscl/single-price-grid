@@ -17,6 +17,10 @@
         }
         body {
             background: hsl(204, 43%, 93%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 40px 0;
         }
         .title-h2 {
@@ -26,7 +30,7 @@
         }
         .pricing-container {
             display: grid;
-            width: max(50%, 320px);
+            grid-template-columns: minmax(50%, 320px);
             margin: 0 auto;
         }
         .join-us {
@@ -40,7 +44,7 @@
             margin-bottom: 15px;
         }
         .join-second-title {
-            font-size: 18px;
+            font-size: 16px;
             color: hsl(71, 73%, 54%);
             margin-bottom: 15px;
         }
@@ -73,24 +77,24 @@
             font-size: 15px;
         }
         .suscription-btn {
+            display: block;
             width: 100%;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
             background: hsl(71, 73%, 54%);
             border: none;
             border-radius: 6px;
             padding: 16px 0;
             margin-top: 46px;
-            cursor: pointer;
             box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.11);
+            text-decoration: none;
             transition: 0.3s ease;
+            cursor: pointer;
         }
         .suscription-btn:hover {
             box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.21);
-        }
-        .suscription-btn a {
-            font-size: 16px;
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
         }
         .why-us {
             color: hsl(204, 43%, 93%);
@@ -122,6 +126,7 @@
             body {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 height: 100vh;
                 padding: 0;
             }
@@ -151,36 +156,36 @@
     </style>
 </head>
 <body>
-    <section class="pricing-container">
-        <div class="join-us">
-            <h1 class="join-first-title">Join our community</h1>
-            <h2 class="join-second-title">30-day, hassle-free money back guarantee</h2>
-            <p class="join-description">
-                Gain access to our full library of tutorials along with expert code reviews. 
-                Perfect for any developers who are serious about honing their skills.
-            </p>
-        </div>
-        <div class="suscription">
-            <h2 class="title-h2">Monthly Subscription</h2>
-            <p class="suscription-price"><span class="price">&dollar;29</span> per month</p>
-            <p class="suscription-d">Full access for less than &dollar;1 a day</p>
-            <button class="suscription-btn">
-                <a href="#">Sign Up</a>
-            </button>
-        </div>
-        <div class="why-us">
-            <h2 class="title-h2">Why Us</h2>
-            <ul class="why-us-list">
-                <li class="items">Tutorials by industry experts</li>
-                <li class="items">Peer &amp; expert code review</li>
-                <li class="items">Coding exercises</li>
-                <li class="items">Access to our GitHub repos</li>
-                <li class="items">Community forum</li>
-                <li class="items">Flashcard decks</li>
-                <li class="items">New videos every week</li>
-            </ul>
-        </div>
-    </section>
+    <main>
+        <section class="pricing-container">
+            <div class="join-us">
+                <h1 class="join-first-title">Join our community</h1>
+                <h2 class="join-second-title">30-day, hassle-free money back guarantee</h2>
+                <p class="join-description">
+                    Gain access to our full library of tutorials along with expert code reviews. 
+                    Perfect for any developers who are serious about honing their skills.
+                </p>
+            </div>
+            <div class="suscription">
+                <h2 class="title-h2">Monthly Subscription</h2>
+                <p class="suscription-price"><span class="price">&dollar;29</span> per month</p>
+                <p class="suscription-d">Full access for less than &dollar;1 a day</p>
+                <a class="suscription-btn" href="#">Sign Up</a>
+            </div>
+            <div class="why-us">
+                <h2 class="title-h2">Why Us</h2>
+                <ul class="why-us-list">
+                    <li class="items">Tutorials by industry experts</li>
+                    <li class="items">Peer &amp; expert code review</li>
+                    <li class="items">Coding exercises</li>
+                    <li class="items">Access to our GitHub repos</li>
+                    <li class="items">Community forum</li>
+                    <li class="items">Flashcard decks</li>
+                    <li class="items">New videos every week</li>
+                </ul>
+            </div>
+        </section>
+    </main>
   
     <footer>
         <p class="attribution">
