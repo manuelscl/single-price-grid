@@ -1,0 +1,167 @@
+:root {
+    /* Primary Colors */
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* Neutral Colors */
+    --white: 	hsl(0, 0%, 100%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.pricing-section {
+    display: grid;
+    grid-template-columns: minmax(50%, 320px);
+    margin: 0 auto;
+}
+
+.community-info {
+    padding: 3rem 2.5rem;
+    background: var(--white);
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.community-title {
+    font-size: 2.2rem;
+    color: var(--cyan);
+    margin-bottom: 1.5rem;
+}
+
+.community-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bright-yellow);
+    margin-bottom: 1.5rem;
+}
+
+.community-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    line-height: 2.5rem;
+}
+
+.subscription-plan {
+    color: var(--white);
+    background: var(--cyan);
+    padding: 3rem 2.5rem;
+}
+
+.subscription-title {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.subscription-price {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.subscription-description {
+    font-size: 1.5rem;
+}
+
+.subscription-button {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+    background: var(--bright-yellow);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.6rem 0;
+    margin-top: 4.6rem;
+    box-shadow: 0 0 3rem 0.5rem rgba(52, 80, 73, 0.11);
+    text-decoration: none;
+    transition: 160ms ease-in-out;
+    cursor: pointer;
+}
+
+.subscription-button:hover {
+    background: hsl(71, 62%, 50%);
+    box-shadow: 0 0 3rem 0.6rem rgba(0, 0, 0, 0.11);
+}
+
+.benefits-list {
+    color: var(--light-gray);
+    background: var(--light-cyan);
+    padding: 3rem 2.5rem;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.benefits-title {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    color: var(--light-gray);
+}
+
+@media (min-width: 980px) {
+    body {
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .pricing-section {
+        width: 625px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .community-info {
+        grid-column: span 2;
+        padding: 4rem;
+    }
+
+    .subscription-plan {
+        padding: 4rem;
+        border-radius: 0 0 0 0.8rem;
+    }
+    
+    .benefits-list {
+        padding: 4rem 4rem 3rem;
+        border-radius: 0 0 0.8rem 0;
+    }
+}
